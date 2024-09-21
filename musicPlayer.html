@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sathwik - Music Web App</title><link rel="preload" as="image" imagesrcset="https://developergtm.in/wp-content/uploads/2024/04/Screenshot-2024-04-04-171751-1024x526.png 1024w, https://developergtm.in/wp-content/uploads/2024/04/Screenshot-2024-04-04-171751-300x154.png 300w, https://developergtm.in/wp-content/uploads/2024/04/Screenshot-2024-04-04-171751-768x395.png 768w, https://developergtm.in/wp-content/uploads/2024/04/Screenshot-2024-04-04-171751-150x77.png 150w, https://developergtm.in/wp-content/uploads/2024/04/Screenshot-2024-04-04-171751-450x231.png 450w, https://developergtm.in/wp-content/uploads/2024/04/Screenshot-2024-04-04-171751-600x308.png 600w, https://developergtm.in/wp-content/uploads/2024/04/Screenshot-2024-04-04-171751.png 1066w" imagesizes="(max-width: 814px) 100vw, 814px" /><link rel="preload" as="font" href="https://developergtm.in/wp-content/themes/smart-mag/css/icons/fonts/ts-icons.woff2?v2.8" type="font/woff2" crossorigin="anonymous" />
+    <link rel="stylesheet" href="musicPlayer.css">
+</head>
+<body>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+<div class="combo">
+    <div class="haii">
+      <h2>MUSIC</h2>
+      <h1>PLAYER</h1>
+      <p>ALL MUSIC JUKE BOX COMBO COLLECTION</p>
+    </div> 
+<div class="player">
+  <div class="header">
+    Music <span>Player</span>
+  </div>
+
+  <div class="img">
+    <img decoding="async" src="" id="thumb">
+  </div>
+  <div class="details">
+    <h3 id="title"></h3>
+    <p id="musician"></p>
+  </div>
+  <audio id="song">
+    <source src="" type="audio/mp3">
+    </source>
+  </audio>
+
+  <div class="time">
+    <span id="start">00:00</span>
+    <span id="end">04:36</span>
+  </div>
+  <input type="range" id="progress" value="0">
+
+  <div class="action">
+
+    <button onclick="prevPlay()">
+      <i class="bx bx-skip-previous"></i>
+    </button>
+
+    <button onclick="playPause()" class="play" id="play">
+      <i class="bx bx-play"></i>
+    </button>
+
+    <button onclick="nextPlay()">
+      <i class="bx bx-skip-next"></i>
+    </button>
+
+  </div>
+</div>
+</div>
+<footer>
+  <div class="footer">
+    <marquee direction="right" class="text"  loop="infinite">©2024 JUKE-BOX   ©2024 JUKE-BOX   ©2024 JUKE-BOX   ©2024 JUKE-BOX  ©2024 JUKE-BOX   ©2024 JUKE-BOX   ©2024 JUKE-BOX  ©2024 JUKE-BOX   ©2024 JUKE-BOX</marquee>
+  </div>
+</footer>
+  <script src="musicPlayer.js"></script>
+
+</body>
+</html>
